@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/tab/个人中心/1备份 3</title>
+    <g id="创客宝" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tab-icon" transform="translate(-317.000000, -129.000000)">
+            <g id="icon/tab/个人中心/2" transform="translate(316.000000, 126.000000)">
+                <g id="编组-2备份-3">
+                    <rect id="矩形备份-21" x="0" y="0" width="24" height="24"></rect>
+                    <ellipse id="椭圆形" fill-opacity="0.5" fill="#FFDFD5" cx="12" cy="20.5" rx="11" ry="3.5"></ellipse>
+                    <path d="M12.0022403,16 C20.0738137,16 19.9926579,21.1530934 19.9926579,21.1530934 C20.0537692,21.6208326 19.7267018,22 19.2607897,22 L4.74320208,22 C4.27777884,22 3.93213362,21.6153591 4.0113338,21.1530934 C4.0113338,21.1530934 3.93066695,16 12.0022403,16 Z" id="路径" stroke="#F03520" fill-rule="nonzero"></path>
+                    <path d="M12,4 L17,4 L17,9 C17,11.7614901 14.7614901,14 12,14 C9.23850991,14 7,11.7614901 7,9 C7,6.23850993 9.23850993,4 12,4 Z" id="路径" stroke="#FFA94D" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

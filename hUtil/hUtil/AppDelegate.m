@@ -2,11 +2,12 @@
 //  AppDelegate.m
 //  hUtil
 //
-//  Created by wjr on 2018/3/13.
-//  Copyright © 2018年 wjr. All rights reserved.
+//  Created by sandyloop on 2018/3/13.
+//  Copyright © 2018年 sandyloop. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "TabBarController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    TabBarController* tab = [[TabBarController alloc] init];
+    self.window.rootViewController = tab;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
