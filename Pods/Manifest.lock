@@ -21,6 +21,7 @@ PODS:
   - FLAnimatedImage (1.0.12)
   - JJCollectionViewRoundFlowLayout (2.3.1)
   - JKCountDownButton (1.3.0)
+  - LMJHorizontalScrollText (2.0.2)
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
   - MJExtension (3.2.1)
@@ -51,6 +52,7 @@ DEPENDENCIES:
   - Aspects
   - JJCollectionViewRoundFlowLayout
   - JKCountDownButton
+  - LMJHorizontalScrollText
   - Masonry
   - MBProgressHUD
   - MJExtension
@@ -72,6 +74,7 @@ SPEC REPOS:
     - FLAnimatedImage
     - JJCollectionViewRoundFlowLayout
     - JKCountDownButton
+    - LMJHorizontalScrollText
     - Masonry
     - MBProgressHUD
     - MJExtension
@@ -91,6 +94,7 @@ SPEC CHECKSUMS:
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   JJCollectionViewRoundFlowLayout: 7fe77b24a4069fcdb9e861c2e60f4591ddf254e7
   JKCountDownButton: 3b557e75d23e7243bb63c8130e6d12d8510468dd
+  LMJHorizontalScrollText: ebc9b908db297f603c5b98c9b4e5f4582f5a14b8
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
@@ -103,6 +107,6 @@ SPEC CHECKSUMS:
   TYAttributedLabel: cb8fc910d97eb5224936d4f692a78e042af691b2
   TZImagePickerController: 36ca728ec681228918aa82e993aaab1962281b72
 
-PODFILE CHECKSUM: 8ee9264aca8757a534b0b9f540b36573031b44a7
+PODFILE CHECKSUM: 4c0035c33eecd57e5c7adee4688f323379d59e9d
 
 COCOAPODS: 1.9.3

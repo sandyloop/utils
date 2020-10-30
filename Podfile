@@ -25,6 +25,7 @@ target 'hUtil' do
   pod 'MJExtension'
   pod 'AFNetworking'
   pod 'RDVTabBarController'
+  pod 'LMJHorizontalScrollText'
 end
 
 

@@ -29,6 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param objColor 色值对象
 +(UIImage *)svgImageNamed:(NSString *)name imgv:(UIImageView *)imgv objColor:(UIColor *)objColor;
 
++ (UIImage *)logolOrQRImage:(NSString *)QRTargetString logolImage:(NSString *)logolImage;
 
 @end
 

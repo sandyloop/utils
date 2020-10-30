@@ -7,9 +7,11 @@
 //
 
 #import "SecondViewController.h"
+#import "SecondView.h"
+
 
 @interface SecondViewController ()
-
+@property(nonatomic,strong)SecondView* secondView;
 @end
 
 @implementation SecondViewController
@@ -22,6 +24,7 @@
 //    [[self rdv_tabBarItem] setBadgeValue:@"3"];
 //    [[self rdv_tabBarItem] setBadgeBackgroundColor:[UIColor colorWithHexString:@"#3CB371"]];
 //    [self rdv_tabBarItem].badgePositionAdjustment = UIOffsetMake(-3, 8);
+    [self.view addSubview:self.secondView];
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -31,14 +34,15 @@
 
 
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(SecondView*) secondView{
+    if (!_secondView) {
+        _secondView = [[SecondView alloc] init];
+        _secondView.frame = CGRectMake(0, HNAVBAR_HEIGHT, HSCREEN_WIDTH, HSCREEN_HEIGHT-HTABBAR_HEIGHT);
+        _secondView.backgroundColor = [UIColor whiteColor];
+    }
+    return _secondView;
 }
-*/
+
+
 
 @end

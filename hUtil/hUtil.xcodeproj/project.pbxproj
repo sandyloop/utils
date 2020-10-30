@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1C62897C24B8572100E37330 /* HToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C62897B24B8572100E37330 /* HToast.m */; };
 		1C62897F24B8609100E37330 /* ToastHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C62897E24B8609100E37330 /* ToastHelper.m */; };
+		1C6F2D0124C6DCD600BAB293 /* SecondView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6F2D0024C6DCD600BAB293 /* SecondView.m */; };
 		1C78AFD024B5B5AC0076CF54 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C78AFCF24B5B5AC0076CF54 /* FirstViewController.m */; };
 		1C78AFD324B5B5B80076CF54 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C78AFD224B5B5B80076CF54 /* SecondViewController.m */; };
 		1C78AFD624B5B5C20076CF54 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C78AFD524B5B5C20076CF54 /* ThirdViewController.m */; };
@@ -48,6 +49,8 @@
 		1C62897B24B8572100E37330 /* HToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HToast.m; sourceTree = "<group>"; };
 		1C62897D24B8609100E37330 /* ToastHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToastHelper.h; sourceTree = "<group>"; };
 		1C62897E24B8609100E37330 /* ToastHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToastHelper.m; sourceTree = "<group>"; };
+		1C6F2CFF24C6DCD600BAB293 /* SecondView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondView.h; sourceTree = "<group>"; };
+		1C6F2D0024C6DCD600BAB293 /* SecondView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondView.m; sourceTree = "<group>"; };
 		1C78AFCE24B5B5AC0076CF54 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		1C78AFCF24B5B5AC0076CF54 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		1C78AFD124B5B5B80076CF54 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -173,6 +176,8 @@
 				1CB7A84524B6BA3C0040A911 /* WorkCollectionViewCell.m */,
 				1CB7A84A24B6CB9E0040A911 /* WorkView.h */,
 				1CB7A84B24B6CB9E0040A911 /* WorkView.m */,
+				1C6F2CFF24C6DCD600BAB293 /* SecondView.h */,
+				1C6F2D0024C6DCD600BAB293 /* SecondView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -293,7 +298,7 @@
 				TargetAttributes = {
 					7368E27720579D0B006C3020 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -373,6 +378,7 @@
 				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
 				"${BUILT_PRODUCTS_DIR}/JJCollectionViewRoundFlowLayout/JJCollectionViewRoundFlowLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/JKCountDownButton/JKCountDownButton.framework",
+				"${BUILT_PRODUCTS_DIR}/LMJHorizontalScrollText/LMJHorizontalScrollText.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
@@ -393,6 +399,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JJCollectionViewRoundFlowLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JKCountDownButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LMJHorizontalScrollText.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
@@ -419,6 +426,7 @@
 			files = (
 				7368E29620579D80006C3020 /* HUtils.m in Sources */,
 				1CB7A83924B6A4AE0040A911 /* BaseViewController.m in Sources */,
+				1C6F2D0124C6DCD600BAB293 /* SecondView.m in Sources */,
 				1C78AFD024B5B5AC0076CF54 /* FirstViewController.m in Sources */,
 				1C62897C24B8572100E37330 /* HToast.m in Sources */,
 				1C78AFD624B5B5C20076CF54 /* ThirdViewController.m in Sources */,
@@ -571,7 +579,8 @@
 			baseConfigurationReference = 4D0D5C1927C017C9BA755B16 /* Pods-hUtil.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C86LT83XV9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hUtil/hUtil-Prefix.pch";
@@ -580,7 +589,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ygf.maker;
 				PRODUCT_NAME = "过热";
-				PROVISIONING_PROFILE_SPECIFIER = "新农云创个人正式线开发证书";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -590,7 +599,8 @@
 			baseConfigurationReference = 5F32D0934DD4590A6FEAA86F /* Pods-hUtil.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C86LT83XV9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hUtil/hUtil-Prefix.pch";
@@ -599,7 +609,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ygf.maker;
 				PRODUCT_NAME = "过热";
-				PROVISIONING_PROFILE_SPECIFIER = "新农云创个人正式线开发证书";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
