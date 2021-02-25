@@ -29,7 +29,6 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    [ToastHelper showPromptWithMessage:@"Discover" withPromptType:ToastType_Toast];
 }
 
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0ADCA325E787C1008EF34E /* FourView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0ADCA225E787C1008EF34E /* FourView.m */; };
 		1C62897C24B8572100E37330 /* HToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C62897B24B8572100E37330 /* HToast.m */; };
 		1C62897F24B8609100E37330 /* ToastHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C62897E24B8609100E37330 /* ToastHelper.m */; };
 		1C6F2D0124C6DCD600BAB293 /* SecondView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6F2D0024C6DCD600BAB293 /* SecondView.m */; };
@@ -45,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		0C0FB6D1474A6C70409D38EC /* Pods_hUtil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hUtil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C0ADCA125E787C1008EF34E /* FourView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourView.h; sourceTree = "<group>"; };
+		1C0ADCA225E787C1008EF34E /* FourView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourView.m; sourceTree = "<group>"; };
 		1C62897A24B8572100E37330 /* HToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HToast.h; sourceTree = "<group>"; };
 		1C62897B24B8572100E37330 /* HToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HToast.m; sourceTree = "<group>"; };
 		1C62897D24B8609100E37330 /* ToastHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToastHelper.h; sourceTree = "<group>"; };
@@ -178,6 +181,8 @@
 				1CB7A84B24B6CB9E0040A911 /* WorkView.m */,
 				1C6F2CFF24C6DCD600BAB293 /* SecondView.h */,
 				1C6F2D0024C6DCD600BAB293 /* SecondView.m */,
+				1C0ADCA125E787C1008EF34E /* FourView.h */,
+				1C0ADCA225E787C1008EF34E /* FourView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -298,7 +303,7 @@
 				TargetAttributes = {
 					7368E27720579D0B006C3020 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -430,6 +435,7 @@
 				1C78AFD024B5B5AC0076CF54 /* FirstViewController.m in Sources */,
 				1C62897C24B8572100E37330 /* HToast.m in Sources */,
 				1C78AFD624B5B5C20076CF54 /* ThirdViewController.m in Sources */,
+				1C0ADCA325E787C1008EF34E /* FourView.m in Sources */,
 				1CB7A83D24B6A5020040A911 /* CustomerNavigationBar.m in Sources */,
 				1CB7A84C24B6CB9E0040A911 /* WorkView.m in Sources */,
 				1C62897F24B8609100E37330 /* ToastHelper.m in Sources */,
@@ -579,17 +585,17 @@
 			baseConfigurationReference = 4D0D5C1927C017C9BA755B16 /* Pods-hUtil.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = C86LT83XV9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hUtil/hUtil-Prefix.pch";
 				INFOPLIST_FILE = hUtil/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ygf.maker;
 				PRODUCT_NAME = "过热";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "新农云创个人正式线开发证书";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -599,17 +605,17 @@
 			baseConfigurationReference = 5F32D0934DD4590A6FEAA86F /* Pods-hUtil.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = C86LT83XV9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hUtil/hUtil-Prefix.pch";
 				INFOPLIST_FILE = hUtil/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ygf.maker;
 				PRODUCT_NAME = "过热";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "新农云创个人正式线开发证书";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

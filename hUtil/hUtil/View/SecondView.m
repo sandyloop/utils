@@ -19,7 +19,7 @@
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
-        [self addSubview:self.horizontalScrollText];
+//        [self addSubview:self.horizontalScrollText];
         [self setNeedsUpdateConstraints];
         [self updateConstraintsIfNeeded];
     }

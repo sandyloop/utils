@@ -552,7 +552,38 @@ static inline CGSize CTFramesetterSuggestFrameSizeForAttributedStringWithConstra
 
 - (BOOL)enumerateLinkRectContainPoint:(CGPoint)point viewHeight:(CGFloat)viewHeight successBlock:(void (^)(id<TYLinkStorageProtocol> textStorage))successBlock
 {
-    return [self enumerateRunRect:_linkRectDictionary ContainPoint:point viewHeight:viewHeight successBlock:successBlock];
+    return [self enumerateRunRectLink:_linkRectDictionary ContainPoint:point viewHeight:viewHeight successBlock:successBlock];
+}
+
+- (BOOL)enumerateRunRectLink:(NSDictionary *)runRectDic ContainPoint:(CGPoint)point viewHeight:(CGFloat)viewHeight successBlock:(void (^)(id<TYLinkStorageProtocol> textStorage))successBlock
+{
+    if (runRectDic.count == 0) {
+        return NO;
+    }
+    // CoreText context coordinates are the opposite to UIKit so we flip the bounds
+    CGAffineTransform transform =  CGAffineTransformScale(CGAffineTransformMakeTranslation(0, viewHeight), 1.f, -1.f);
+    
+    __block BOOL find = NO;
+    // 遍历run位置字典
+    [runRectDic enumerateKeysAndObjectsUsingBlock:^(NSValue *keyRectValue, id<TYLinkStorageProtocol> textStorage, BOOL *stop) {
+        
+        CGRect imgRect = [keyRectValue CGRectValue];
+        CGRect rect = CGRectApplyAffineTransform(imgRect, transform);
+        
+        if ([textStorage conformsToProtocol:@protocol(TYDrawStorageProtocol) ]) {
+            rect = UIEdgeInsetsInsetRect(rect,((id<TYDrawStorageProtocol>)textStorage).margin);
+        }
+        
+        // point 是否在rect里
+        if(CGRectContainsPoint(rect, point)){
+            find = YES;
+            *stop = YES;
+            if (successBlock) {
+                successBlock(textStorage);
+            }
+        }
+    }];
+    return find;
 }
 
 - (BOOL)enumerateRunRect:(NSDictionary *)runRectDic ContainPoint:(CGPoint)point viewHeight:(CGFloat)viewHeight successBlock:(void (^)(id<TYTextStorageProtocol> textStorage))successBlock
@@ -672,3 +703,4 @@ static inline CGSize CTFramesetterSuggestFrameSizeForAttributedStringWithConstra
 }
 
 @end
+

@@ -67,7 +67,7 @@ static NSString *TIANQI_LIFE_SUGGESTION_URL = @"https://api.seniverse.com/v3/lif
     NSString *string = @"https://www.hulianjun.com";
     scanCodeImageV.image = [UIImage logolOrQRImage:string logolImage:@"picker_alert_sigh"];
     scanCodeImageV.frame = CGRectMake(100, 100, 100, 100);
-    [self.view addSubview:scanCodeImageV];
+//    [self.view addSubview:scanCodeImageV];
 }
 
 //字典转json格式字符串
