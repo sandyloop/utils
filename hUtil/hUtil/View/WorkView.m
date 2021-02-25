@@ -9,6 +9,7 @@
 #import "WorkView.h"
 #import "JJCollectionViewRoundFlowLayout.h"
 #import "WorkCollectionViewCell.h"
+#import <LocalAuthentication/LocalAuthentication.h>
 
 @interface WorkView()<UICollectionViewDelegate,UICollectionViewDataSource,JJCollectionViewDelegateRoundFlowLayout>
 @property(nonatomic,strong)UICollectionView* collectionView;
@@ -42,6 +43,13 @@
     WorkCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[NSString stringWithUTF8String:object_getClassName([WorkCollectionViewCell class])] forIndexPath:indexPath];
 
     return cell;
+}
+
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == 0) {
+        [self fingerPrint];
+    }
 }
 
 /*
@@ -116,6 +124,101 @@
         _layout.isCalculateFooter = NO;
     }
     return _layout;
+}
+
+
+#pragma mark-- /* 指纹解锁 */
+- (void)fingerPrint{
+    LAContext *context = [LAContext new];
+    
+    //这个属性是设置指纹输入失败之后的弹出框的选项
+    context.localizedFallbackTitle = @"验证密码登录";
+    context.localizedCancelTitle = @"取消";
+//    __weak typeof(self) WeakSelf = self;
+    
+    NSError *error = nil;
+    if ([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&error]) {
+        NSLog(@"支持指纹识别");
+        [context evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics localizedReason:@"请在此状态下验证你的TouchID的指纹" reply:^(BOOL success, NSError * _Nullable error) {
+            if (success) {
+                NSLog(@"验证成功 刷新主界面");
+                //这里需要开启线程,否则跳转会有问题
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2.0 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+                    UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"温馨提示" message:@"验证成功" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+                    [alert show];
+                });
+            }else{
+                switch (error.code) {
+                    case LAErrorSystemCancel:
+                    {
+                        NSLog(@"手机切换到桌面 或者 系统取消授权，如其他APP切入");
+                        break;
+                    }
+                    case LAErrorUserCancel:
+                    {
+                        NSLog(@"用户取消验证Touch ID");
+                        break;
+                    }
+                    case LAErrorAuthenticationFailed:
+                    {
+                        NSLog(@"3次指纹登录失败,即为授权失败");
+                        break;
+                    }
+                    case LAErrorPasscodeNotSet:
+                    {
+                        NSLog(@"系统未设置密码");
+                        break;
+                    }
+                    case LAErrorTouchIDNotAvailable:
+                    {
+                        NSLog(@"设备Touch ID不可用，例如未打开");
+                        break;
+                    }
+                    case LAErrorTouchIDNotEnrolled:
+                    {
+                        NSLog(@"设备Touch ID不可用，用户未录入");
+                        break;
+                    }
+                    case LAErrorUserFallback:
+                    {
+                        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                            NSLog(@"用户选择输入密码，切换主线程处理");
+                        }];
+                        break;
+                    }
+                    default:
+                    {
+                        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                            NSLog(@"其他情况，切换主线程处理");
+//                            [self.navigationController popViewControllerAnimated:YES];
+                        }];
+                        break;
+                    }
+                }
+            }
+        }];
+    }else{
+        switch (error.code) {
+            case LAErrorTouchIDNotEnrolled:
+            {
+                //身份验证无法启动，TouchID没有注册的手指。
+                NSLog(@"TouchID is not enrolled");
+                break;
+            }
+            case LAErrorPasscodeNotSet:
+            {
+                //认证无法启动，因为密码没有设置在设备。
+                NSLog(@"A passcode has not been set");
+                break;
+            }
+            default:
+            {
+                //TouchID不可用
+                NSLog(@"TouchID not available");
+                break;
+            }
+        }
+    }
 }
 
 @end

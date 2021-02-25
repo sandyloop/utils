@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1C0ADCA325E787C1008EF34E /* FourView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0ADCA225E787C1008EF34E /* FourView.m */; };
+		1C0ADCA725E7993D008EF34E /* AddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0ADCA625E7993D008EF34E /* AddressViewController.m */; };
+		1C0ADCB725E7A10E008EF34E /* RXHexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0ADCAC25E7A10E008EF34E /* RXHexColor.m */; };
+		1C0ADCB825E7A10E008EF34E /* RXJDAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0ADCAE25E7A10E008EF34E /* RXJDAddressPickerView.m */; };
+		1C0ADCB925E7A10E008EF34E /* RXGetAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0ADCAF25E7A10E008EF34E /* RXGetAddress.m */; };
+		1C0ADCBA25E7A10E008EF34E /* city.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C0ADCB025E7A10E008EF34E /* city.json */; };
+		1C0ADCBB25E7A10E008EF34E /* RXJDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0ADCB125E7A10E008EF34E /* RXJDButton.m */; };
+		1C0ADCBC25E7A10E008EF34E /* RXJDTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0ADCB225E7A10E008EF34E /* RXJDTableCell.m */; };
 		1C62897C24B8572100E37330 /* HToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C62897B24B8572100E37330 /* HToast.m */; };
 		1C62897F24B8609100E37330 /* ToastHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C62897E24B8609100E37330 /* ToastHelper.m */; };
 		1C6F2D0124C6DCD600BAB293 /* SecondView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6F2D0024C6DCD600BAB293 /* SecondView.m */; };
@@ -48,6 +55,19 @@
 		0C0FB6D1474A6C70409D38EC /* Pods_hUtil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hUtil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C0ADCA125E787C1008EF34E /* FourView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourView.h; sourceTree = "<group>"; };
 		1C0ADCA225E787C1008EF34E /* FourView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourView.m; sourceTree = "<group>"; };
+		1C0ADCA525E7993D008EF34E /* AddressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressViewController.h; sourceTree = "<group>"; };
+		1C0ADCA625E7993D008EF34E /* AddressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressViewController.m; sourceTree = "<group>"; };
+		1C0ADCAC25E7A10E008EF34E /* RXHexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXHexColor.m; sourceTree = "<group>"; };
+		1C0ADCAD25E7A10E008EF34E /* RXHexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXHexColor.h; sourceTree = "<group>"; };
+		1C0ADCAE25E7A10E008EF34E /* RXJDAddressPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXJDAddressPickerView.m; sourceTree = "<group>"; };
+		1C0ADCAF25E7A10E008EF34E /* RXGetAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXGetAddress.m; sourceTree = "<group>"; };
+		1C0ADCB025E7A10E008EF34E /* city.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.json; sourceTree = "<group>"; };
+		1C0ADCB125E7A10E008EF34E /* RXJDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXJDButton.m; sourceTree = "<group>"; };
+		1C0ADCB225E7A10E008EF34E /* RXJDTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXJDTableCell.m; sourceTree = "<group>"; };
+		1C0ADCB325E7A10E008EF34E /* RXGetAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXGetAddress.h; sourceTree = "<group>"; };
+		1C0ADCB425E7A10E008EF34E /* RXJDAddressPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXJDAddressPickerView.h; sourceTree = "<group>"; };
+		1C0ADCB525E7A10E008EF34E /* RXJDTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXJDTableCell.h; sourceTree = "<group>"; };
+		1C0ADCB625E7A10E008EF34E /* RXJDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXJDButton.h; sourceTree = "<group>"; };
 		1C62897A24B8572100E37330 /* HToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HToast.h; sourceTree = "<group>"; };
 		1C62897B24B8572100E37330 /* HToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HToast.m; sourceTree = "<group>"; };
 		1C62897D24B8609100E37330 /* ToastHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToastHelper.h; sourceTree = "<group>"; };
@@ -121,6 +141,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C0ADCA925E7A0F0008EF34E /* ThirdLib */ = {
+			isa = PBXGroup;
+			children = (
+				1C0ADCAA25E7A10E008EF34E /* JDAddressPicker */,
+			);
+			path = ThirdLib;
+			sourceTree = "<group>";
+		};
+		1C0ADCAA25E7A10E008EF34E /* JDAddressPicker */ = {
+			isa = PBXGroup;
+			children = (
+				1C0ADCB025E7A10E008EF34E /* city.json */,
+				1C0ADCB325E7A10E008EF34E /* RXGetAddress.h */,
+				1C0ADCAF25E7A10E008EF34E /* RXGetAddress.m */,
+				1C0ADCB425E7A10E008EF34E /* RXJDAddressPickerView.h */,
+				1C0ADCAE25E7A10E008EF34E /* RXJDAddressPickerView.m */,
+				1C0ADCB625E7A10E008EF34E /* RXJDButton.h */,
+				1C0ADCB125E7A10E008EF34E /* RXJDButton.m */,
+				1C0ADCB525E7A10E008EF34E /* RXJDTableCell.h */,
+				1C0ADCB225E7A10E008EF34E /* RXJDTableCell.m */,
+				1C0ADCAB25E7A10E008EF34E /* UIColor */,
+			);
+			path = JDAddressPicker;
+			sourceTree = "<group>";
+		};
+		1C0ADCAB25E7A10E008EF34E /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				1C0ADCAC25E7A10E008EF34E /* RXHexColor.m */,
+				1C0ADCAD25E7A10E008EF34E /* RXHexColor.h */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
 		1C78AFCD24B5B5910076CF54 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +188,8 @@
 				1C78AFD824B5B5CA0076CF54 /* FourViewController.m */,
 				1CB7A83724B6A4AE0040A911 /* BaseViewController.h */,
 				1CB7A83824B6A4AE0040A911 /* BaseViewController.m */,
+				1C0ADCA525E7993D008EF34E /* AddressViewController.h */,
+				1C0ADCA625E7993D008EF34E /* AddressViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -208,6 +264,7 @@
 		7368E27A20579D0B006C3020 /* hUtil */ = {
 			isa = PBXGroup;
 			children = (
+				1C0ADCA925E7A0F0008EF34E /* ThirdLib */,
 				1CB7A84324B6B9DB0040A911 /* View */,
 				1CB7A83A24B6A4CA0040A911 /* Customer */,
 				1C78AFDB24B5B7120076CF54 /* resource */,
@@ -342,6 +399,7 @@
 				1C78AFEB24B5B7B50076CF54 /* 2gray.svg in Resources */,
 				1C78AFEA24B5B7B50076CF54 /* 1select.svg in Resources */,
 				1C78AFE624B5B7B50076CF54 /* 1gray.svg in Resources */,
+				1C0ADCBA25E7A10E008EF34E /* city.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +491,7 @@
 				1CB7A83924B6A4AE0040A911 /* BaseViewController.m in Sources */,
 				1C6F2D0124C6DCD600BAB293 /* SecondView.m in Sources */,
 				1C78AFD024B5B5AC0076CF54 /* FirstViewController.m in Sources */,
+				1C0ADCB825E7A10E008EF34E /* RXJDAddressPickerView.m in Sources */,
 				1C62897C24B8572100E37330 /* HToast.m in Sources */,
 				1C78AFD624B5B5C20076CF54 /* ThirdViewController.m in Sources */,
 				1C0ADCA325E787C1008EF34E /* FourView.m in Sources */,
@@ -449,8 +508,13 @@
 				1CB7A84124B6A72E0040A911 /* UIView+Frame.m in Sources */,
 				1C78B02924B5C9060076CF54 /* UIColor+Extension.m in Sources */,
 				1CB7A84924B6C6E30040A911 /* TabBarController.m in Sources */,
+				1C0ADCB925E7A10E008EF34E /* RXGetAddress.m in Sources */,
+				1C0ADCBC25E7A10E008EF34E /* RXJDTableCell.m in Sources */,
 				7368E28B20579D0B006C3020 /* main.m in Sources */,
+				1C0ADCB725E7A10E008EF34E /* RXHexColor.m in Sources */,
 				7368E27D20579D0B006C3020 /* AppDelegate.m in Sources */,
+				1C0ADCA725E7993D008EF34E /* AddressViewController.m in Sources */,
+				1C0ADCBB25E7A10E008EF34E /* RXJDButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

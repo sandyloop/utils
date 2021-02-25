@@ -9,6 +9,7 @@
 #import "ThirdViewController.h"
 #import "HmacSha1Tool.h"
 #import "UIImage+SVGKit.h"
+#import "RXJDAddressPickerView.h"
 
 #pragma mark - API KEY / USER ID
 
@@ -25,6 +26,9 @@ static NSString *TIANQI_NOW_WEATHER_URL = @"https://api.seniverse.com/v3/weather
 static NSString *TIANQI_LIFE_SUGGESTION_URL = @"https://api.seniverse.com/v3/life/suggestion.json"; //生活指数 URL
 
 @interface ThirdViewController ()
+@property(nonatomic,strong)UIButton* addressBtn;
+@property(nonatomic,strong)UILabel* addressLab;
+@property (nonatomic,strong) RXJDAddressPickerView * threePicker;
 
 @end
 
@@ -35,6 +39,19 @@ static NSString *TIANQI_LIFE_SUGGESTION_URL = @"https://api.seniverse.com/v3/lif
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navbar.titleString = @"消息";
+    [self.view addSubview:self.addressBtn];
+    [self.view addSubview:self.addressLab];
+    
+    [[self.addressBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        __weak typeof(self) WeakSelf = self;
+            _threePicker = [[RXJDAddressPickerView alloc] init];
+            _threePicker.completion = ^(NSString *address, NSString * addressCode){
+                NSLog(@"_threePicker\n, address=%@\n", address);
+                [WeakSelf.addressLab setText:[NSString stringWithFormat:@"%@",address]];
+            };
+            [self.view addSubview:_threePicker];
+            [_threePicker showAddress];
+    }];
     
 }
 
@@ -109,6 +126,29 @@ static NSString *TIANQI_LIFE_SUGGESTION_URL = @"https://api.seniverse.com/v3/lif
 - (NSString *)getSigntureWithParams:(NSString *)params{
     NSString *signature = [HmacSha1Tool HmacSha1Key:TIANQI_API_SECRET_KEY data:params];
     return signature;
+}
+
+-(UIButton*) addressBtn {
+    if (!_addressBtn) {
+        _addressBtn = [[UIButton alloc] initWithFrame:CGRectMake(HSCREEN_WIDTH/2-100*HSCALAE, 100, 100*HSCALAE, 70*HSCALAE)];
+        [_addressBtn.titleLabel setFont:[UIFont systemFontOfSize:10]];
+        [_addressBtn setTitle:@"选择地址" forState:UIControlStateNormal];
+        [_addressBtn.layer setMasksToBounds:YES];
+        [_addressBtn.layer setCornerRadius:4.0];
+        _addressBtn.backgroundColor = [UIColor systemPinkColor];
+    }
+    return _addressBtn;
+}
+
+-(UILabel*) addressLab {
+    if (!_addressLab) {
+        _addressLab = [[UILabel alloc] initWithFrame:CGRectMake(0, self.addressBtn.qm_bottom+20*HSCALAE, HSCREEN_WIDTH, 60*HSCALAE)];
+        _addressLab.font = HFONTSIZE(32);
+        _addressLab.textColor = HEXCOLOR(@"999999");
+        _addressLab.backgroundColor = [UIColor systemPinkColor];
+        _addressLab.textAlignment = NSTextAlignmentCenter;
+    }
+    return _addressLab;
 }
 
 
