@@ -15,6 +15,7 @@
 		1C0ADCBA25E7A10E008EF34E /* city.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C0ADCB025E7A10E008EF34E /* city.json */; };
 		1C0ADCBB25E7A10E008EF34E /* RXJDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0ADCB125E7A10E008EF34E /* RXJDButton.m */; };
 		1C0ADCBC25E7A10E008EF34E /* RXJDTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0ADCB225E7A10E008EF34E /* RXJDTableCell.m */; };
+		1C13BA5D25FB1AF300960E63 /* ZLCountdownManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C13BA5B25FB1AF300960E63 /* ZLCountdownManager.m */; };
 		1C62897C24B8572100E37330 /* HToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C62897B24B8572100E37330 /* HToast.m */; };
 		1C62897F24B8609100E37330 /* ToastHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C62897E24B8609100E37330 /* ToastHelper.m */; };
 		1C6F2D0124C6DCD600BAB293 /* SecondView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6F2D0024C6DCD600BAB293 /* SecondView.m */; };
@@ -32,6 +33,7 @@
 		1C78AFEB24B5B7B50076CF54 /* 2gray.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1C78AFE324B5B7B50076CF54 /* 2gray.svg */; };
 		1C78B02924B5C9060076CF54 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C78B02624B5C9060076CF54 /* UIColor+Extension.m */; };
 		1C78B02A24B5C9060076CF54 /* UIImage+SVGKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C78B02724B5C9060076CF54 /* UIImage+SVGKit.m */; };
+		1C921F1E25E8D2F3004563F0 /* svip_app_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C921F1D25E8D2F3004563F0 /* svip_app_icon.png */; };
 		1CB7A83924B6A4AE0040A911 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB7A83824B6A4AE0040A911 /* BaseViewController.m */; };
 		1CB7A83D24B6A5020040A911 /* CustomerNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB7A83C24B6A5020040A911 /* CustomerNavigationBar.m */; };
 		1CB7A84124B6A72E0040A911 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB7A84024B6A72E0040A911 /* UIView+Frame.m */; };
@@ -40,7 +42,7 @@
 		1CB7A84C24B6CB9E0040A911 /* WorkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB7A84B24B6CB9E0040A911 /* WorkView.m */; };
 		1CB7A84E24B6E9DC0040A911 /* WeChatSansStd-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CB7A84D24B6E9DC0040A911 /* WeChatSansStd-Bold.ttf */; };
 		1CB7A85124B6EEBB0040A911 /* HmacSha1Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB7A84F24B6EEBB0040A911 /* HmacSha1Tool.m */; };
-		3CEEB9679A086B46964D1500 /* Pods_hUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0FB6D1474A6C70409D38EC /* Pods_hUtil.framework */; };
+		1E20B6026075B37CAFE9E23C /* Pods_hUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E7D9EEE080A1E129C18DF0 /* Pods_hUtil.framework */; };
 		7368E27D20579D0B006C3020 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7368E27C20579D0B006C3020 /* AppDelegate.m */; };
 		7368E28020579D0B006C3020 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7368E27F20579D0B006C3020 /* ViewController.m */; };
 		7368E28320579D0B006C3020 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7368E28120579D0B006C3020 /* Main.storyboard */; };
@@ -52,7 +54,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C0FB6D1474A6C70409D38EC /* Pods_hUtil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hUtil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C0ADCA125E787C1008EF34E /* FourView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourView.h; sourceTree = "<group>"; };
 		1C0ADCA225E787C1008EF34E /* FourView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourView.m; sourceTree = "<group>"; };
 		1C0ADCA525E7993D008EF34E /* AddressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressViewController.h; sourceTree = "<group>"; };
@@ -68,6 +69,8 @@
 		1C0ADCB425E7A10E008EF34E /* RXJDAddressPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXJDAddressPickerView.h; sourceTree = "<group>"; };
 		1C0ADCB525E7A10E008EF34E /* RXJDTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXJDTableCell.h; sourceTree = "<group>"; };
 		1C0ADCB625E7A10E008EF34E /* RXJDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXJDButton.h; sourceTree = "<group>"; };
+		1C13BA5B25FB1AF300960E63 /* ZLCountdownManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLCountdownManager.m; sourceTree = "<group>"; };
+		1C13BA5C25FB1AF300960E63 /* ZLCountdownManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLCountdownManager.h; sourceTree = "<group>"; };
 		1C62897A24B8572100E37330 /* HToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HToast.h; sourceTree = "<group>"; };
 		1C62897B24B8572100E37330 /* HToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HToast.m; sourceTree = "<group>"; };
 		1C62897D24B8609100E37330 /* ToastHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToastHelper.h; sourceTree = "<group>"; };
@@ -94,6 +97,7 @@
 		1C78B02624B5C9060076CF54 /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
 		1C78B02724B5C9060076CF54 /* UIImage+SVGKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SVGKit.m"; sourceTree = "<group>"; };
 		1C78B02824B5C9060076CF54 /* UIImage+SVGKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SVGKit.h"; sourceTree = "<group>"; };
+		1C921F1D25E8D2F3004563F0 /* svip_app_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = svip_app_icon.png; sourceTree = "<group>"; };
 		1CB7A83724B6A4AE0040A911 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		1CB7A83824B6A4AE0040A911 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		1CB7A83B24B6A5020040A911 /* CustomerNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomerNavigationBar.h; sourceTree = "<group>"; };
@@ -127,6 +131,7 @@
 		7368E29320579D80006C3020 /* HUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUtils.m; sourceTree = "<group>"; };
 		7368E29420579D80006C3020 /* NSDate+HExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+HExtension.h"; sourceTree = "<group>"; };
 		7368E29520579D80006C3020 /* NSDate+HExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HExtension.m"; sourceTree = "<group>"; };
+		80E7D9EEE080A1E129C18DF0 /* Pods_hUtil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hUtil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CEEB9679A086B46964D1500 /* Pods_hUtil.framework in Frameworks */,
+				1E20B6026075B37CAFE9E23C /* Pods_hUtil.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +180,15 @@
 			path = UIColor;
 			sourceTree = "<group>";
 		};
+		1C13BA5A25FB1AF300960E63 /* Countdown */ = {
+			isa = PBXGroup;
+			children = (
+				1C13BA5C25FB1AF300960E63 /* ZLCountdownManager.h */,
+				1C13BA5B25FB1AF300960E63 /* ZLCountdownManager.m */,
+			);
+			path = Countdown;
+			sourceTree = "<group>";
+		};
 		1C78AFCD24B5B5910076CF54 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +220,7 @@
 		1C78AFDB24B5B7120076CF54 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				1C921F1D25E8D2F3004563F0 /* svip_app_icon.png */,
 				1CB7A84D24B6E9DC0040A911 /* WeChatSansStd-Bold.ttf */,
 				1C78AFDE24B5B7B40076CF54 /* 1gray.svg */,
 				1C78AFE224B5B7B50076CF54 /* 1select.svg */,
@@ -289,6 +304,7 @@
 		7368E29120579D80006C3020 /* hUtils */ = {
 			isa = PBXGroup;
 			children = (
+				1C13BA5A25FB1AF300960E63 /* Countdown */,
 				1CB7A85024B6EEBB0040A911 /* HmacSha1Tool.h */,
 				1CB7A84F24B6EEBB0040A911 /* HmacSha1Tool.m */,
 				1C78B02524B5C9060076CF54 /* UIColor+Extension.h */,
@@ -312,7 +328,7 @@
 		A97A0184E8CF0DD4ABBA8DAF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0C0FB6D1474A6C70409D38EC /* Pods_hUtil.framework */,
+				80E7D9EEE080A1E129C18DF0 /* Pods_hUtil.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -355,7 +371,7 @@
 		7368E27020579D0B006C3020 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = wjr;
 				TargetAttributes = {
 					7368E27720579D0B006C3020 = {
@@ -391,6 +407,7 @@
 				1C78AFE424B5B7B50076CF54 /* 3selwect.svg in Resources */,
 				7368E28820579D0B006C3020 /* LaunchScreen.storyboard in Resources */,
 				7368E28520579D0B006C3020 /* Assets.xcassets in Resources */,
+				1C921F1E25E8D2F3004563F0 /* svip_app_icon.png in Resources */,
 				1CB7A84E24B6E9DC0040A911 /* WeChatSansStd-Bold.ttf in Resources */,
 				1C78AFE924B5B7B50076CF54 /* 4gray.svg in Resources */,
 				7368E28320579D0B006C3020 /* Main.storyboard in Resources */,
@@ -439,8 +456,10 @@
 				"${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/JJCollectionViewRoundFlowLayout/JJCollectionViewRoundFlowLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/JKCountDownButton/JKCountDownButton.framework",
+				"${BUILT_PRODUCTS_DIR}/JQFMDB/JQFMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/LMJHorizontalScrollText/LMJHorizontalScrollText.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
@@ -450,9 +469,11 @@
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImageWebPCoder/SDWebImageWebPCoder.framework",
 				"${BUILT_PRODUCTS_DIR}/SVGKit/SVGKit.framework",
 				"${BUILT_PRODUCTS_DIR}/TYAttributedLabel/TYAttributedLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
+				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -460,8 +481,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Aspects.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JJCollectionViewRoundFlowLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JKCountDownButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JQFMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LMJHorizontalScrollText.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
@@ -471,9 +494,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImageWebPCoder.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVGKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TYAttributedLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -487,6 +512,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C13BA5D25FB1AF300960E63 /* ZLCountdownManager.m in Sources */,
 				7368E29620579D80006C3020 /* HUtils.m in Sources */,
 				1CB7A83924B6A4AE0040A911 /* BaseViewController.m in Sources */,
 				1C6F2D0124C6DCD600BAB293 /* SecondView.m in Sources */,
@@ -554,6 +580,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -561,8 +588,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -588,7 +617,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -609,6 +638,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -616,8 +646,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -637,7 +669,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -655,7 +687,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hUtil/hUtil-Prefix.pch";
 				INFOPLIST_FILE = hUtil/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ygf.maker;
 				PRODUCT_NAME = "过热";
@@ -675,7 +707,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hUtil/hUtil-Prefix.pch";
 				INFOPLIST_FILE = hUtil/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ygf.maker;
 				PRODUCT_NAME = "过热";

@@ -7,6 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+//
+//#import <Flutter/Flutter.h>
+//#import <FlutterPluginRegistrant/GeneratedPluginRegistrant.h>
+//#import <kraken/Kraken.h>
 
 @interface ViewController : UIViewController
 

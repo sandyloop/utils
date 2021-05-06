@@ -7,11 +7,11 @@
 //
 
 #import "WorkCollectionViewCell.h"
-#import "FLAnimatedImageView.h"
+//#import "FLAnimatedImageView.h"
 
 @interface WorkCollectionViewCell()
 @property(nonatomic,strong)UIView* bgView;
-@property(nonatomic,strong)FLAnimatedImageView* iconImgView;
+@property(nonatomic,strong)UIImageView* iconImgView;
 @property(nonatomic,strong)UILabel* iconLab;
 @end
 
@@ -67,12 +67,12 @@
 }
 
 
-- (FLAnimatedImageView*) iconImgView{
+- (UIImageView*) iconImgView{
     if (!_iconImgView) {
-        _iconImgView = [[FLAnimatedImageView alloc] init];
-//        _iconImgView.image = [UIImage imageNamed:@"liveicon"];
-        NSString * str = @"https://www.baidu.com/img/dong_54209c0ff3da32eecc31f340c08a18f6.gif";
-        [_iconImgView sd_setImageWithURL:[NSURL URLWithString:str] placeholderImage:nil];
+        _iconImgView = [[UIImageView alloc] init];
+        _iconImgView.image = [UIImage imageNamed:@"liveicon"];
+//        NSString * str = @"https://www.baidu.com/img/dong_54209c0ff3da32eecc31f340c08a18f6.gif";
+//        [_iconImgView sd_setImageWithURL:[NSURL URLWithString:str] placeholderImage:nil];
     }
     return _iconImgView;
 }

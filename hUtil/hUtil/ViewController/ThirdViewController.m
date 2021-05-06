@@ -58,32 +58,32 @@ static NSString *TIANQI_LIFE_SUGGESTION_URL = @"https://api.seniverse.com/v3/lif
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    // 创建 session 对象
-    NSURLSession *session = [NSURLSession sharedSession];
-    NSString * nameStr  = @"南京";//输入汉字 区别“集宁”，使用拼音则会造成混乱
-    NSString *dataUTF8 = [nameStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
-    NSString *urlStr = [self fetchWeatherWithURL:TIANQI_LIFE_SUGGESTION_URL //TIANQI_NOW_WEATHER_URL
-                                             ttl:@30
-                                        Location:dataUTF8//查询位置需要对汉字进行转码，不然会有地名重复
-                                        language:@"zh-Hans"//zh-Hans 简体中文
-                                            unit:@"c"//单位 当参数为c时，温度c、风速km/h、能见度km、气压mb;当参数为f时，温度f、风速mph、能见度mile、气压inch
-                                           start:@"1"
-                                            days:@"1"];
-    NSURL *url = [NSURL URLWithString:urlStr];
-    // 通过 URL 初始化 task,在 block 内部可以直接对返回的数据进行处理
-    NSURLSessionTask *task = [session dataTaskWithURL:url
-                                    completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-                                    NSLog(@"输出:%@",[self dictionaryToJson:[NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil]]);
-    }];
-
-    // 启动任务
-    [task resume];
+//    // 创建 session 对象
+//    NSURLSession *session = [NSURLSession sharedSession];
+//    NSString * nameStr  = @"南京";//输入汉字 区别“集宁”，使用拼音则会造成混乱
+//    NSString *dataUTF8 = [nameStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+//    NSString *urlStr = [self fetchWeatherWithURL:TIANQI_LIFE_SUGGESTION_URL //TIANQI_NOW_WEATHER_URL
+//                                             ttl:@30
+//                                        Location:dataUTF8//查询位置需要对汉字进行转码，不然会有地名重复
+//                                        language:@"zh-Hans"//zh-Hans 简体中文
+//                                            unit:@"c"//单位 当参数为c时，温度c、风速km/h、能见度km、气压mb;当参数为f时，温度f、风速mph、能见度mile、气压inch
+//                                           start:@"1"
+//                                            days:@"1"];
+//    NSURL *url = [NSURL URLWithString:urlStr];
+//    // 通过 URL 初始化 task,在 block 内部可以直接对返回的数据进行处理
+//    NSURLSessionTask *task = [session dataTaskWithURL:url
+//                                    completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+//                                    NSLog(@"输出:%@",[self dictionaryToJson:[NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil]]);
+//    }];
+//
+//    // 启动任务
+//    [task resume];
     
     
-    UIImageView *scanCodeImageV = [[UIImageView alloc] init];
-    NSString *string = @"https://www.hulianjun.com";
-    scanCodeImageV.image = [UIImage logolOrQRImage:string logolImage:@"picker_alert_sigh"];
-    scanCodeImageV.frame = CGRectMake(100, 100, 100, 100);
+//    UIImageView *scanCodeImageV = [[UIImageView alloc] init];
+//    NSString *string = @"https://www.hulianjun.com";
+//    scanCodeImageV.image = [UIImage logolOrQRImage:string logolImage:@"picker_alert_sigh"];
+//    scanCodeImageV.frame = CGRectMake(100, 100, 100, 100);
 //    [self.view addSubview:scanCodeImageV];
 }
 

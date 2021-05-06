@@ -50,5 +50,32 @@
 	</array>
 	<key>NSFaceIDUsageDescription</key>
 	<string>App需要您的同意,才能访问</string>
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundleAlternateIcons</key>
+		<dict>
+			<key>svip_app_icon</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>svip_app_icon</string>
+				</array>
+				<key>UIPreernderedIcon</key>
+				<false/>
+			</dict>
+		</dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>AppIcon-Activity20x20</string>
+				<string>AppIcon-Activity29x29</string>
+				<string>AppIcon-Activity40x40</string>
+				<string>AppIcon-Activity60x60</string>
+			</array>
+			<key>CFBundleIconName</key>
+			<string>AppIcon-Activity</string>
+		</dict>
+	</dict>
 </dict>
 </plist>
